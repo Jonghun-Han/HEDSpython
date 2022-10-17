@@ -6,7 +6,7 @@ Virtual Environment
 @module: Humanitarian Engineering and Data Science
 """
 
-download and install Anaconda
+# download and install Anaconda
 # After installing it, the folder "userName/opt/anaconda3" should be created
 
 
@@ -21,7 +21,7 @@ conda install spyder-kernels=2.3 numpy pandas matplotlib scikit-learn
 conda install -c conda-forge spyder-kernels=2.3
 
 
-go to Spyder preferences / Python Interpreter
-Select "use the following python interpreter"
+# go to Spyder preferences / Python Interpreter
+# Select "use the following python interpreter"
 
-in spyder, restart the kernel
+# in spyder, restart the kernel
