@@ -82,8 +82,9 @@ confidence = regressionModel.score(X,y)
 print('confidence', confidence)
 
 # Plot the Regression Model
-plt.scatter(X_test["Humidity"], y_test, color='black')
-plt.plot(X_test["Humidity"], y_prediction , color='blue')
+plt.figure(dpi=200)
+plt.scatter(X_test["Humidity"], y_test, color='black', s=50)
+plt.scatter(X_test["Humidity"], y_prediction , color='blue', s=1)
 plt.title('Temperature VS Humidity')
 plt.xlabel('Humidity')
 plt.ylabel('Temperature')

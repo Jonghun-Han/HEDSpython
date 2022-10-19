@@ -61,11 +61,20 @@ confidence = regressionModel.score(X,y)
 print('confidence', confidence)
 
 # Plot the Regression Model
-plt.scatter(X_test, y_test, color='black')
+plt.figure(dpi=200)
+plt.scatter(X_test, y_test, color='black', s=10)
 plt.plot(X_test, regressionModel.predict(X_test), color='blue')
 plt.title('MaxTemp VS MinTemp')
 plt.xlabel('MinTemp')
 plt.ylabel('MaxTemp')
+plt.show()
+
+# Plot predicted vs measured plot
+plt.figure(dpi=200)
+plt.scatter(y_test, regressionModel.predict(X_test), color='black', s=10)
+plt.plot([-30, 50], [-30, 50], color='blue')
+plt.xlabel('Measured')
+plt.ylabel('Predicted')
 plt.show()
 
 #Example: what will be the maximum temp when the minumum temp =25
