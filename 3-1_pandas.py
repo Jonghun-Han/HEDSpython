@@ -33,7 +33,7 @@ internallyDisplaced = pandas.read_csv(csvFilePath)
 # create new dataframes with portions of the original one ()
 newDataFrame = internallyDisplaced['Year'] # one field only
 newDataFrame = internallyDisplaced.Year # Equivalent to the line above
-newDataFrame2 = internallyDisplaced[['Year', 'Hazard Type']] # more fields (in a list)
+newDataFrame2 = internallyDisplaced[['Year', 'New Displacements']] # more fields (in a list)
 
 # access specific elements
 print(internallyDisplaced.Year[0])

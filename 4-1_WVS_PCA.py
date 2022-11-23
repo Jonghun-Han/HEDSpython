@@ -34,22 +34,25 @@ del rawData
 
 #%% Histogram of countries
 
-labels, counts = np.unique(WVSgeneral.B_COUNTRY_ALPHA,return_counts=True)
-ticks = range(len(counts))
+countries, numSurveysInCountry = np.unique(WVSgeneral.B_COUNTRY_ALPHA,return_counts=True)
+dummy = range(len(countries))
 
 plt.figure(dpi=200)
-plt.bar(ticks,counts, align='center')
-plt.xticks(ticks, labels)
+plt.bar(dummy,numSurveysInCountry, align='center')
+plt.xticks(dummy, countries)
 plt.xticks(rotation = 90)
 plt.show()
 
 #%% Clean dataset: fill blank spaces
 
 # check most common answer to each question
+nanQuestions = []
 for q in range(1,Nquestions+1):
     labels, counts = np.unique(WVS['Q'+str(q)],return_counts=True)
     print( ['Q'+str(q)+':', 'Most common:', labels[counts.argmax()], 
             '#Empty:', WVS['Q'+str(q)].isna().sum()] )
+    if np.isnan(labels[counts.argmax()]):
+        nanQuestions.append(q)
     
 
 # use the excel file and the questionnaire pdf to check "weird" values

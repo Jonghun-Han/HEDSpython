@@ -49,11 +49,11 @@ plt.show()
 # %% Compute for different populations and compare
 
 populations = {
-    'Flat': 5*np.ones([int(Npoints/3),1]),
-    'Uniform': np.random.rand(Npoints),
-    'Normal': np.random.normal(loc=5, scale=2, size=Npoints),
-    'Exponential': np.random.exponential(scale=1, size=Npoints),
-    'Gamma': np.random.gamma(2, 2, Npoints),
+    #'Flat': 5*np.ones([int(Npoints/3),1]),
+    #'Uniform': np.random.rand(Npoints),
+    #'Normal': np.random.normal(loc=5, scale=4, size=Npoints),
+    #'Exponential': np.random.exponential(scale=1, size=Npoints),
+    #'Gamma': np.random.gamma(2, 2, Npoints),
     'Beta': np.random.beta(0.5, 0.5, Npoints),
     }
 

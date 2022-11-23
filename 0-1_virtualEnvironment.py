@@ -13,7 +13,7 @@ Virtual Environment
 # In the terminal (for Linux/Mac) or CMD (for Windows) run:
 conda create -n HEDSenv -y
 conda activate HEDSenv
-conda install spyder-kernels=2.3 numpy pandas matplotlib scikit-learn
+conda install spyder-kernels=2.3 numpy pandas matplotlib scikit-learn wbdata
 # After these commands, you should have the folder 
 # "userName/opt/anaconda3/envs/HEDSenv/bin/python"
 
