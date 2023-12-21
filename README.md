@@ -1,6 +1,7 @@
 # HEDSpython
-Code for the Python tutorials of the "Humanitarian Engineering and Data Science" module
+Code for the Python tutorials of the "Humanitarian Engineering and Data Science" module.
+
+As a first thing, please make sure you upload the file "initiation.ipynb" to your Google Drive and run it from there. This will copy all the necessary files, including the tutorials scripts, in your Drive. You can then run the tutorial notebooks directly from you Drive in Colab.
 
 # Nomenclature
-The name of each file starts with the number of the associated lecture week, followed by a number indicating the order of the files of the same week. 
-For example, 3-2_name.py is the second file of week three.
+You can find the tutorial for each week under the name "Tutorial_weekNo.ipynb".
